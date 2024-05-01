@@ -45,7 +45,7 @@ export const useAppointments = defineStore('appointments', () => {
             appointmentsByDate.value = data
          } 
     })
-
+  
     function setSelectedAppointment(appointment){
         services.value = appointment.services
         date.value = convertToDDMMYYYY(appointment.date)
